@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mariano Aguilera Paneque — Mantenimiento y desarrollo web</title>
+  <meta name="description" content="Desarrollador front-end en Málaga. Construyo webs y me aseguro de que sigan en pie: disponibilidad, actualizaciones, backups, dominios, DNS, SSL y Core Web Vitals.">
+  <meta name="author" content="Mariano Aguilera Paneque">
+  <meta name="theme-color" content="#F0F0EC">
+  <link rel="canonical" href="https://tu-dominio.example/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F0F0EC'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%231F9D55'/%3E%3C/svg%3E">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mariano Aguilera Paneque — Mantenimiento y desarrollo web">
+  <meta property="og:description" content="Construyo webs y me aseguro de que sigan en pie. Disponibilidad, actualizaciones, backups, dominios y Core Web Vitals.">
+  <meta property="og:image" content="https://tu-dominio.example/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mariano Aguilera Paneque — Mantenimiento y desarrollo web">
+  <meta name="twitter:description" content="Construyo webs y me aseguro de que sigan en pie.">
+  <meta name="twitter:image" content="https://tu-dominio.example/og-image.svg">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=IBM+Plex+Mono:wght@500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra superior: guiño status page -->
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <span class="topbar__name">Mariano Aguilera Paneque</span>
+      <span class="topbar__meta">
+        <time id="clock" class="topbar__clock" aria-hidden="true"></time>
+        <span class="topbar__status">
+          <span class="dot dot--live" aria-hidden="true"></span>
+          ONLINE
+        </span>
+      </span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <h1 id="hero-title" class="hero__title">Construyo webs y me aseguro de que sigan en pie.</h1>
+        <p class="hero__sub">Desarrollador front-end, Málaga. Producto propio en producción, e-commerce con pagos reales, y automatización con IA para vigilar y mantener sitios de punta a punta.</p>
+        <a class="btn" href="mailto:marianoap18@gmail.com">Escríbeme <span aria-hidden="true">→</span></a>
+      </div>
+
+      <!-- 2. BARRA DE PRUEBA -->
+      <div class="wrap">
+        <ul class="proof" aria-label="Datos de referencia">
+          <li class="proof__item">~<span class="count" data-to="1200">1.200</span> usuarios · producto propio en producción</li>
+          <li class="proof__item">E-commerce con pasarela de pago activa</li>
+          <li class="proof__item">DNS, dominios y despliegues gestionados por mí</li>
+        </ul>
+        <p class="cred">Entre los 10 primeros de 100 proyectos en incubadora de startups · Automatización con IA y agentes aplicada al mantenimiento</p>
+      </div>
+    </section>
+
+    <!-- 3. PROYECTOS -->
+    <section class="section" aria-labelledby="proyectos-title">
+      <div class="wrap">
+        <h2 id="proyectos-title" class="section__title">Proyectos</h2>
+
+        <ol class="log">
+
+          <li class="row">
+            <div class="row__head">
+              <span class="status">
+                <span class="dot dot--live" aria-hidden="true"></span>
+                <span class="status__label status__label--live">En producción</span>
+              </span>
+              <span class="row__links">
+                <a class="row__link" href="https://runnect.es" target="_blank" rel="noopener">runnect.es <span aria-hidden="true">→</span></a>
+                <a class="row__link" href="https://info.runnect.es" target="_blank" rel="noopener">info.runnect.es <span aria-hidden="true">→</span></a>
+              </span>
+            </div>
+            <h3 class="row__name">Runnect</h3>
+            <p class="row__desc">PWA de gestión para clubs de running.</p>
+            <p class="stack">React 18 · Vite · TypeScript · Tailwind · Supabase</p>
+            <ul class="did">
+              <li>Fundé, diseñé y desarrollé el producto entero en solitario tras rehacer el MVP desde cero.</li>
+              <li>Dos clubs en beta con unos 1.200 miembros combinados.</li>
+              <li>Resolví una caída de dominio reconfigurando el DNS en Cloudflare y reconectando el despliegue.</li>
+            </ul>
+          </li>
+
+          <li class="row">
+            <div class="row__head">
+              <span class="status">
+                <span class="dot dot--live" aria-hidden="true"></span>
+                <span class="status__label status__label--live">En producción</span>
+              </span>
+              <a class="row__link" href="https://detoname.es" target="_blank" rel="noopener">detoname.es <span aria-hidden="true">→</span></a>
+            </div>
+            <h3 class="row__name">#detoname</h3>
+            <p class="row__desc">E-commerce de gafas de sol.</p>
+            <p class="stack">Shopify · Front en Lovable · Supabase</p>
+            <ul class="did">
+              <li>Socio técnico y operativo: monté la tienda, el dominio y la integración del front.</li>
+              <li>Configuré Shopify Payments y el traspaso de titularidad con los datos fiscales.</li>
+              <li>Me encargué del cumplimiento fiscal español y de RGPD.</li>
+            </ul>
+          </li>
+
+          <li class="row">
+            <div class="row__head">
+              <span class="status">
+                <span class="dot dot--live" aria-hidden="true"></span>
+                <span class="status__label status__label--live">En producción</span>
+              </span>
+              <a class="row__link" href="https://maquillaje-two.vercel.app" target="_blank" rel="noopener">maquillaje-two.vercel.app <span aria-hidden="true">→</span></a>
+            </div>
+            <h3 class="row__name">Nácar</h3>
+            <p class="row__desc">App web que puntúa el maquillaje con IA a partir de una foto y da feedback por zonas.</p>
+            <p class="stack">JavaScript · Supabase · Gemini · MediaPipe · Vercel</p>
+            <ul class="did">
+              <li>Diseñé y construí la app entera: interfaz, autenticación con Supabase y la integración de la IA.</li>
+              <li>Monté el pipeline con Gemini que puntúa de 0 a 10 por zonas, con mapeo facial de 478 puntos (MediaPipe).</li>
+              <li>Gestiono el repositorio y los despliegues en Vercel de punta a punta.</li>
+            </ul>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. MANTENIMIENTO -->
+    <section class="section section--fill" aria-labelledby="mant-title">
+      <div class="wrap">
+        <h2 id="mant-title" class="section__title">Qué cubre el mantenimiento</h2>
+        <ul class="cover">
+          <li class="cover__item">Vigilancia de disponibilidad y avisos de caída</li>
+          <li class="cover__item">Actualizaciones de plataforma, plugins y dependencias</li>
+          <li class="cover__item">Copias de seguridad y restauración</li>
+          <li class="cover__item">Renovación de dominios, DNS y certificados SSL</li>
+          <li class="cover__item">Rendimiento y Core Web Vitals</li>
+          <li class="cover__item">SEO técnico: indexación, sitemap, metadatos</li>
+          <li class="cover__item">Automatización y monitorización con IA: alertas y chequeos</li>
+          <li class="cover__item">Incidencias urgentes con tiempo de respuesta acordado</li>
+        </ul>
+        <p class="note">Disponibilidad acordada por horas semanales · respuesta en 24 h ante incidencias</p>
+        <p class="adapt">Trabajo con lo que ya tienes —WordPress, Shopify, Webflow o código a medida—. Si tu stack no está en mi lista, me pongo al día antes de tocarlo.</p>
+      </div>
+    </section>
+
+    <!-- 5. CÓMO TRABAJO -->
+    <section class="section" aria-labelledby="proceso-title">
+      <div class="wrap">
+        <h2 id="proceso-title" class="section__title">Cómo trabajo</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <div>
+              <h3 class="step__name">Reviso</h3>
+              <p class="step__desc">Auditoría del estado actual y lista de lo que está fallando.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <div>
+              <h3 class="step__name">Priorizo</h3>
+              <p class="step__desc">Qué cuesta visitas o ventas primero, qué puede esperar.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <div>
+              <h3 class="step__name">Arreglo</h3>
+              <p class="step__desc">Cambios en producción sin tumbar el sitio.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <div>
+              <h3 class="step__name">Vigilo</h3>
+              <p class="step__desc">Informe mensual corto: qué se tocó, qué está en verde.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. CONTACTO -->
+    <section class="section section--contact" aria-labelledby="contacto-title">
+      <div class="wrap">
+        <h2 id="contacto-title" class="section__title">Contacto</h2>
+        <a class="mail" href="mailto:marianoap18@gmail.com">marianoap18@gmail.com</a>
+        <p class="contact__hint">En el mensaje: la URL de tu web, qué falla o qué te preocupa, y cuántas horas semanales de mantenimiento buscas. Con eso te respondo rápido.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>Mariano Aguilera Paneque</span>
+      <span class="footer__year">© <span id="year">2026</span></span>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mariano Aguilera Paneque",
+    "jobTitle": "Desarrollador front-end",
+    "email": "mailto:marianoap18@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Málaga", "addressCountry": "ES" },
+    "knowsAbout": ["Desarrollo web", "Mantenimiento web", "React", "Supabase", "DNS", "Core Web Vitals", "SEO técnico", "Inteligencia artificial", "Agentes de IA"]
+  }
+  </script>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
